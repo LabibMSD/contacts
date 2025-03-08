@@ -1,0 +1,150 @@
+<h1>List Contacts</h1>
+
+<p><%= err || success %></p>
+
+<input id="addButton" class="" type="button" value="Add?" />
+
+<form id="addForm" class="hidden" action="/contacts" method="POST">
+    <input type="text" name="nama" id="addNama" placeholder="Nama" required />
+    <input
+        type="email"
+        name="email"
+        id="addEmail"
+        placeholder="Email"
+        required
+    />
+    <input
+        type="number"
+        name="noHP"
+        id="addNoHP"
+        placeholder="No HP"
+        required
+    />
+    <input type="submit" value="Add" />
+    <input id="cancelAddForm" type="button" value="Cancel" />
+</form>
+
+<form action="" method="get">
+    <input type="text" name="id" id="searchInput" placeholder="Search?">
+    <input type="submit" value="Search Or Refresh">
+</form>
+
+<table id="contacts">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>No HP</th>
+        <th>Action</th>
+    </tr>
+    <% contacts = Array.isArray(contacts) ? contacts : [contacts] %>
+    <% contacts.forEach(contact => { %>
+    <tr id="contact-<%= contact.id %>" class="">
+        <td><%= contact.id %></td>
+        <td><%= contact.nama %></td>
+        <td><%= contact.email %></td>
+        <td><%= contact.noHP %></td>
+        <td>
+            <input class="updateButtons" type="button" value="Update?" />
+            <form action="/contacts/<%= contact.id %>" method="post">
+                <input type="hidden" name="_method" value="DELETE" />
+                <input class="deleteButtons" type="submit" value="Delete" />
+            </form>
+        </td>
+    </tr>
+    <tr id="updateForm-<%= contact.id %>" class="hidden">
+        <form action="/contacts/<%= contact.id %>" method="POST">
+            <input type="hidden" name="_method" value="PUT" />
+            <td><%= contact.id %></td>
+            <td>
+                <input
+                    type="text"
+                    name="nama"
+                    id="updateNama"
+                    placeholder="Nama"
+                    value="<%= contact.nama %>"
+                    required
+                />
+            </td>
+            <td>
+                <input
+                    type="email"
+                    name="email"
+                    id="updateEmail"
+                    placeholder="Email"
+                    value="<%= contact.email %>"
+                    required
+                />
+            </td>
+            <td>
+                <input
+                    type="number"
+                    name="noHP"
+                    id="updateNoHP"
+                    placeholder="No HP"
+                    value="<%= contact.noHP %>"
+                    required
+                />
+            </td>
+            <td>
+                <input class="updateSubmits" type="submit" value="Update" />
+                <input
+                    class="cancelUpdateButtons"
+                    type="button"
+                    value="Cancel"
+                />
+            </td>
+        </form>
+    </tr>
+    <% }) %>
+</table>
+
+<script>
+    addButton.addEventListener("click", () => {
+        addForm.classList.toggle("hidden");
+        addButton.classList.toggle("hidden");
+    });
+
+    cancelAddForm.addEventListener("click", () => {
+        addForm.classList.toggle("hidden");
+        addButton.classList.toggle("hidden");
+    });
+
+    contacts.addEventListener("click", function (e) {
+        const updateButtons =
+            document.querySelectorAll(".updateButtons");
+        const cancelUpdateButtons = document.querySelectorAll(
+            ".cancelUpdateButtons"
+        );
+        const updateSubmits =
+            document.querySelectorAll(".updateSubmits");
+
+        updateButtons.forEach((button) => {
+            if (button === e.target) {
+                const contact = button.parentNode.parentNode;
+                const id = contact.id.split('-').slice(-1);
+                const updateForm = document.getElementById(
+                    `updateForm-${id}`
+                );
+
+                updateForm.classList.toggle("hidden");
+                contact.classList.toggle("hidden");
+            }
+        });
+
+        cancelUpdateButtons.forEach((button) => {
+            if (button === e.target) {
+                const contact =
+                    button.parentNode.parentNode.previousSibling
+                        .previousSibling;
+                const id = contact.id.split('-').slice(-1);
+                const updateForm = document.getElementById(
+                    `updateForm-${id}`
+                );
+
+                updateForm.classList.toggle("hidden");
+                contact.classList.toggle("hidden");
+            }
+        });
+    });
+</script>

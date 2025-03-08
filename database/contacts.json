@@ -1,0 +1,176 @@
+[
+    {
+        "id": 2,
+        "nama": "Rina",
+        "email": "rina@email.com",
+        "noHP": "98765432"
+    },
+    {
+        "id": 3,
+        "nama": "Budi",
+        "email": "budi@email.com",
+        "noHP": "45678912"
+    },
+    {
+        "id": 4,
+        "nama": "Siti",
+        "email": "siti@email.com",
+        "noHP": "11223344"
+    },
+    {
+        "id": 5,
+        "nama": "Doni",
+        "email": "doni@email.com",
+        "noHP": "55667788"
+    },
+    {
+        "id": 6,
+        "nama": "Lia",
+        "email": "lia@email.com",
+        "noHP": "99887766"
+    },
+    {
+        "id": 7,
+        "nama": "Joko",
+        "email": "joko@email.com",
+        "noHP": "33445566"
+    },
+    {
+        "id": 8,
+        "nama": "Dewi",
+        "email": "dewi@email.com",
+        "noHP": "22334455"
+    },
+    {
+        "id": 9,
+        "nama": "Andi",
+        "email": "andi@email.com",
+        "noHP": "66554433"
+    },
+    {
+        "id": 10,
+        "nama": "Putri",
+        "email": "putri@email.com",
+        "noHP": "77889900"
+    },
+    {
+        "id": 11,
+        "nama": "Ayah",
+        "email": "agus@email.com",
+        "noHP": "11002233"
+    },
+    {
+        "id": 12,
+        "nama": "Roni",
+        "email": "roni@email.com",
+        "noHP": "66778899"
+    },
+    {
+        "id": 13,
+        "nama": "Ayu",
+        "email": "ayu@email.com",
+        "noHP": "44332211"
+    },
+    {
+        "id": 14,
+        "nama": "Fajar",
+        "email": "fajar@email.com",
+        "noHP": "55443322"
+    },
+    {
+        "id": 15,
+        "nama": "Gita",
+        "email": "gita@email.com",
+        "noHP": "88776655"
+    },
+    {
+        "id": 16,
+        "nama": "Hadi",
+        "email": "hadi@email.com",
+        "noHP": "99001122"
+    },
+    {
+        "id": 17,
+        "nama": "Indra",
+        "email": "indra@email.com",
+        "noHP": "11223300"
+    },
+    {
+        "id": 18,
+        "nama": "Jihan",
+        "email": "jihan@email.com",
+        "noHP": "22334411"
+    },
+    {
+        "id": 19,
+        "nama": "Kiki",
+        "email": "kiki@email.com",
+        "noHP": "33445522"
+    },
+    {
+        "id": 21,
+        "nama": "Nina",
+        "email": "nina@email.com",
+        "noHP": "55667744"
+    },
+    {
+        "id": 22,
+        "nama": "Omar",
+        "email": "omar@email.com",
+        "noHP": "66778855"
+    },
+    {
+        "id": 23,
+        "nama": "Pia",
+        "email": "pia@email.com",
+        "noHP": "77889966"
+    },
+    {
+        "id": 24,
+        "nama": "Qori",
+        "email": "qori@email.com",
+        "noHP": "88990077"
+    },
+    {
+        "id": 25,
+        "nama": "Rian",
+        "email": "rian@email.com",
+        "noHP": "99001188"
+    },
+    {
+        "id": 26,
+        "nama": "Sari",
+        "email": "sari@email.com",
+        "noHP": "11002299"
+    },
+    {
+        "id": 27,
+        "nama": "Tono",
+        "email": "tono@email.com",
+        "noHP": "11223344"
+    },
+    {
+        "id": 28,
+        "nama": "Umi",
+        "email": "umi@email.com",
+        "noHP": "22334455"
+    },
+    {
+        "id": 29,
+        "nama": "Vina",
+        "email": "vina@email.com",
+        "noHP": "33445566"
+    },
+    {
+        "id": 30,
+        "nama": "Wawan",
+        "email": "wawan@email.com",
+        "noHP": "44556677"
+    },
+    {
+        "id": 31,
+        "nama": "Labib",
+        "email": "labib@gmail.com",
+        "noHP": "123123"
+    }
+]

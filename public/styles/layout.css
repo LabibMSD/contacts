@@ -1,0 +1,29 @@
+.body {
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+.active {
+    color: black;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    margin: 5px;
+}
+
+th, td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+td:last-child {
+    display: flex;
+}
